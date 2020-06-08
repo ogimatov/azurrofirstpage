@@ -1,29 +1,29 @@
-<?php
-include_once 'azurroheader.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="azurrostyle.css" media="screen"/>
-    <title>AzurroFirstPage</title>
+    <title>Document</title>
 </head>
 <body>
-                <div class="main">
-                        <div class="text">
-                           <h3>Private site for Azurro Garden owners.</h>
-                           <h3>...........................................</h>            
-                        </div>
+            <div class="header">
+                    <a href="#default" class="logo">Azurro Owners</a>
+                            <div class="header-right">
+                                    <a class="active" href=http://localhost:8080/azurro/azurrofirstpage.php>Home</a>
+                                    <a href="#check">Check</a>
+                                    <a href="#contact">Contact</a>
+                                    <a href="#about">Help</a>
 
-                        <div class = "btn">
-                          <a href='http://localhost:8080/azurro/index1.php'><button type="button" class="first-btn" >Enter information for apartment</button></a>
-                          <a href='http://localhost:8080/azurro/azurrocheck.php'><button type="button" class="second-btn">Check information for apartment</button></a>
-                        </div>
+                            </div>
 
-                </div>  
+                            <div class = "headerpic">
+                                <img src="azuro.jpg" alt="azurro1" width="72px" height="47px" style="margin-left:35px;" >
+                                <img src="azuro2.jpg" alt="azurro2" width="72px" height="47px" style="margin-left:285px;">
+                                <img src="azuro3.jpg" alt="azurro3" width="72px" height="47px" style="margin-left:240px;">
+                            </div>
+
+            </div>
+    
 </body>
 </html>
-<?php
-include_once 'azurrofooter.php';
-?>
