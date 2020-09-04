@@ -1,5 +1,5 @@
 <?php
-include_once 'azurroheader.php';
+include_once 'azurroheader.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,42 +7,31 @@ include_once 'azurroheader.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="azurrostyle.css" media="screen"/>
-    <title>AzurroFirstPage</title>
+    <title>Index1</title>
 </head>
 <body>
-                <div class="main">
-                        <div class="text">
-                           <h3>Private site for Azurro Garden owners.</h>
-                           <h3>...........................................</h>            
-                        </div>
+    <div class="main">
+        <div class="text">
+            <h3>Private site for Azurro Garden owners.</h3>
+            <h3>......................................</h3>
+        </div>
+        <form action="azurrodb.php" method="POST">
 
-                        <div class = "btn">
-                          <a href='http://localhost:8080/azurro/azurropassword.php'><button type="button" class="first-btn" >Enter information for apartment</button></a>
-                          <a href='http://localhost:8080/azurro/azurrocheck.php'><button type="button" class="second-btn">Check information for apartment</button></a>
-                        </div>
+            <label for="fname">Name of owner:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name.."><br>
 
-                       <div class = "mainpic">
-                            <div class = "mainpic1">
-                                    <img src="galery/august.jpg" alt="azurro1" width="272px" height="200px">
-                            </div>
-                            
-                            <div class = "mainpic2">
-                                    <img src="galery/august1.jpg" alt="azurro2" width="272px" height="200px">
-                            </div>
+            <label for="apartnumber">Number of apartment:</label><br>
+            <input type="text" id="apartnumber" name="apartnumber" placeholder="Enter your apartment number.."><br><br>
 
-                            <div class = "mainpic3">
-                                    <img src="galery/august2.jpg" alt="azurro3" width="272px" height="200px">
-                            </div>
-                            
-                       </div>   
-                          
-                       
-          
-                       </div>
+            <label for="garagenumber">Number of garage:</label><br>
+            <input type="text" id="garagenumber" name="garagenumber" placeholder="Enter your garage number .."><br><br>
 
-                </div>  
+            
+            <input type="submit" id="submitbuton" value="Submit"><br><br>
+        </form>
+    </div>
 </body>
-</html>
 <?php
 include_once 'azurrofooter.php';
 ?>
+</html>
